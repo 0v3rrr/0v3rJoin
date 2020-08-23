@@ -22,7 +22,7 @@ $this->getLogger()->info("[0v3rCore] Join activé");
 public function onJoin (PlayerJoinEvent $event){
 
 	$player = $event->getPlayer();
-	$event->setJoinMessage("§7[§a+§7] §6" . $player->getName() . "§7a rejoint le serveur")
+	$event->setJoinMessage("§7[§a+§7] §6" . $player->getName() . "§7a rejoint le serveur");
 }
 
 public function onQuit (PlayerQuitEvent $event){
