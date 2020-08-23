@@ -18,7 +18,7 @@ class function onEnable(){
 $this->getLogger()->info("[0v3rCore] Join activé");
 }
 
-class function onJoin(PlayerJoinEvent $event){
+public function onJoin (PlayerJoinEvent $event){
 
 	$player = $event->getPlayer();
 	$event->setJoinMessage( joinMessage: "");
@@ -35,7 +35,7 @@ class function onJoin(PlayerJoinEvent $event){
 
 }
 
-class function onQuit(PlayerQuitEvent $event){
+public function onQuit (PlayerQuitEvent $event){
 
 	$player = $event->getPlayer();
 	$event->setQuitMessage( quitMessage: "");
