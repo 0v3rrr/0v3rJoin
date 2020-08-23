@@ -25,7 +25,7 @@ class function onJoin(PlayerJoinEvent $event){
 
 	if(!$player->hasPlayedBefore()){
 
-	Server::getInstance()->broadcastMessage( message: "§7[§6+§7] §7Bienvenu(e) a ce joueur§6" . $player->getName() . " qui se connecte pour la premiere fois.§7");
+	Server::getInstance()->broadcastMessage( message: "§7[§6+§7] §7Bienvenu(e) a ce joueur§6" . $player->getName() . " qui se connecte pour la premiere fois§7");
 
 	}else{
 	
