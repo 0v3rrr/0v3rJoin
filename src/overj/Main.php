@@ -22,7 +22,6 @@ $this->getLogger()->info("[0v3rCore] Join activé");
 public function onJoin (PlayerJoinEvent $event){
 
 	$player = $event->getPlayer();
-	$event->setJoinMessage( joinMessage: " ");
 
 	if(!$player->hasPlayedBefore()){
 
@@ -39,7 +38,6 @@ public function onJoin (PlayerJoinEvent $event){
 public function onQuit (PlayerQuitEvent $event){
 
 	$player = $event->getPlayer();
-	$event->setQuitMessage( quitMessage: " ");
 }
 
 }
