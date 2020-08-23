@@ -22,17 +22,6 @@ $this->getLogger()->info("[0v3rCore] Join activé");
 public function onJoin (PlayerJoinEvent $event){
 
 	$player = $event->getPlayer();
-
-	if(!$player->hasPlayedBefore()){
-
-	Server::getInstance()->broadcastMessage( message: "§7[§6+§7] §7Bienvenu(e) a ce joueur§6" . $player->getName() . " qui se connecte pour la premiere fois§7");
-
-	}else{
-	
-	Server::getInstance()->broadcastMessage( message: "§7[§a+§7]" . $player->getName() . " ");
-	
-}
-
 }
 
 public function onQuit (PlayerQuitEvent $event){
