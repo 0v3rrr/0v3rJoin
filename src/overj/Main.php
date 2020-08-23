@@ -14,7 +14,7 @@ use pocketmine\Server;
 
 class Main extends PluginBase implements Listener{
 
-class function onEnable(){
+public function onEnable(){
 $this->getLogger()->info("[0v3rCore] Join activé");
 }
 
